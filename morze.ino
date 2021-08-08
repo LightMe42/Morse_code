@@ -1,0 +1,401 @@
+char incomingChar;
+int pin = 13;
+int reg = 200;
+int lng = 600;
+
+void setup() {
+  pinMode(pin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    incomingChar = Serial.read();
+    Serial.print(incomingChar);
+    
+      switch (incomingChar) {
+        case 'a':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);  
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          break;
+         case 'b':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'c':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'd':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'e':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'f':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'g':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'h':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'i':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'j':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'k':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'l':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'm':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'n':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'o':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'p':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'q':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'r':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 's':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 't':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'u':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'v':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'w':
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'x':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'y':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+         case 'z':
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(lng);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          digitalWrite(pin, HIGH);
+          delay(reg);
+          digitalWrite(pin, LOW);
+          delay(reg);
+          break;
+      }
+      digitalWrite(pin, LOW);
+      delay(reg);
+    
+      
+  }
+}
