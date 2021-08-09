@@ -13,9 +13,35 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     incomingChar = Serial.read();
-    Serial.print(incomingChar);
     
-      switch (incomingChar) {
+    if (isUpperCase(incomingChar)) {
+      incomingChar ^= 32;  
+    }
+    Serial.print(incomingChar);
+    letter(incomingChar);
+    digitalWrite(pin, LOW);
+    delay(lng);
+    
+      
+  }
+}
+
+void dot() {
+  digitalWrite(pin, HIGH);
+  delay(reg);
+  digitalWrite(pin, LOW);
+  delay(reg);
+}
+
+void dash() {
+  digitalWrite(pin, HIGH);
+  delay(lng);
+  digitalWrite(pin, LOW);
+  delay(reg);
+}
+
+void letter(char nextChar) {
+  switch (nextChar) {
         case 'a':
           dot();
           dash();
@@ -157,23 +183,4 @@ void loop() {
           delay(reg);
           break;
       }
-      digitalWrite(pin, LOW);
-      delay(lng);
-    
-      
-  }
-}
-
-void dot() {
-  digitalWrite(pin, HIGH);
-  delay(reg);
-  digitalWrite(pin, LOW);
-  delay(reg);
-}
-
-void dash() {
-  digitalWrite(pin, HIGH);
-  delay(lng);
-  digitalWrite(pin, LOW);
-  delay(reg);
 }
