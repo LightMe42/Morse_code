@@ -1,2 +1,2 @@
 # Morse_code
-Translator to Morse code on Arduino
+LED translator from English to Morse code on Arduino
