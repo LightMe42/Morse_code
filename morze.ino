@@ -15,7 +15,8 @@ void loop() {
     incomingChar = Serial.read();
     
     if (isUpperCase(incomingChar)) {
-      incomingChar ^= 32;  
+     // incomingChar ^= 32;
+     incomingChar = toLowerCase(incomingChar);  
     }
     Serial.print(incomingChar);
     letter(incomingChar);
